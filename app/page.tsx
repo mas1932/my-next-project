@@ -11,7 +11,7 @@ const data: {
   contents: [
     {
       id: "1",
-      title: "渋谷にオフィスを移転したのである",
+      title: "渋谷にオフィスを移転したのですよ",
       category: {
         name: "更新情報",
       },
@@ -20,7 +20,7 @@ const data: {
     },
     {
       id: "2",
-      title: "当社のCEOが業界リーダーTOP30に選出されたのである",
+      title: "当社のCEOが業界リーダーTOP30に選出！！",
       category: {
         name: "更新情報",
       },
@@ -46,9 +46,9 @@ export default function Home() {
     <>
       <section className={styles.top}>
         <div>
-          <h1 className={styles.title}>テクノロジーの力で世界を変えるのだ</h1>
+          <h1 className={styles.title}>テクノロジーの力を未来に変える</h1>
           <p className={styles.description}>
-            私達は市場をリードしているグローバルテックカンパニーなのだ
+            私達は市場をリードしているグローバルテックカンパニー
           </p>
         </div>
         <Image

@@ -27,6 +27,7 @@ export type News = {
 } & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMEIN) {
+  n;
   throw new Error("MICROCMS_SERVICE_DOMEIN is required");
 }
 
@@ -53,4 +54,16 @@ export const getNewsList = async (queries?: MicroCMSQueries) => {
     queries,
   });
   return listData;
+};
+
+export const getNewsDetail = async (
+  contentId: string,
+  queries?: MicroCMSQueries
+) => {
+  const datailData = await client.getListDetail<News>({
+    endpoint: "news",
+    contentId,
+    queries,
+  });
+  return datailData;
 };

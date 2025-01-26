@@ -27,7 +27,6 @@ export type News = {
 } & MicroCMSListContent;
 
 if (!process.env.MICROCMS_SERVICE_DOMEIN) {
-  n;
   throw new Error("MICROCMS_SERVICE_DOMEIN is required");
 }
 
